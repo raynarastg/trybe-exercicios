@@ -18,3 +18,11 @@ if (media > 20) {
 } else {
   console.log("valor menor ou igual a 20");
 }
+// ex 5
+var maior = 0;
+for (let index = 0; index < numbers.length; index++) {
+  if (numbers[index] > maior) {
+    maior = numbers[index];
+  }
+}
+console.log(maior);
