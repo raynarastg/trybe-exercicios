@@ -12,3 +12,9 @@ console.log(soma);
 // ex 3
 var media = soma / 10;
 console.log(media);
+// ex 4
+if (media > 20) {
+  console.log("valor maior que 20");
+} else {
+  console.log("valor menor ou igual a 20");
+}
