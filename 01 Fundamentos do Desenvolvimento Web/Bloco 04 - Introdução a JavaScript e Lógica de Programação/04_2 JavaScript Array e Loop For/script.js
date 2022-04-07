@@ -9,3 +9,6 @@ for (let index = 0; index < numbers.length; index++) {
   soma = soma + numbers[index];
 }
 console.log(soma);
+// ex 3
+var media = soma / 10;
+console.log(media);
