@@ -46,7 +46,6 @@ if (lado1 + lado2 + lado3 == 180 && lado1 > 0 && lado2 > 0 && lado3 > 0) {
 
 let peca = "Rainha";
 peca = peca.toLowerCase();
-
 switch (peca) {
   case "rainha":
     console.log("fileiras, colunas, diagonal");
@@ -59,4 +58,21 @@ switch (peca) {
     break;
   default:
     console.log("erro");
+}
+
+let nota = 90;
+if (nota >= 90 && nota <= 100) {
+  console.log("A");
+} else if (nota >= 80 && nota <= 100) {
+  console.log("B");
+} else if (nota >= 70 && nota <= 100) {
+  console.log("C");
+} else if (nota >= 60 && nota <= 100) {
+  console.log("D");
+} else if (nota >= 50 && nota <= 100) {
+  console.log("E");
+} else if (nota < 50 && nota >= 0) {
+  console.log("F");
+} else {
+  console.log("ERRO");
 }
