@@ -56,3 +56,9 @@ for (let index = 1; index <= 25; index++) {
   numeros.push(index);
 }
 console.log(numeros);
+// ex 9
+let divisaoNumeros = [];
+for (let index = 0; index < numeros.length; index++) {
+  divisaoNumeros.push(numeros[index] / 2);
+}
+console.log(divisaoNumeros);
