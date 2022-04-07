@@ -34,3 +34,12 @@ if (valor > 0) {
 } else {
   console.log("zero");
 }
+const lado1 = 60;
+const lado2 = 50;
+const lado3 = 70;
+
+if (lado1 + lado2 + lado3 == 180 && lado1 > 0 && lado2 > 0 && lado3 > 0) {
+  console.log(true);
+} else {
+  console.log(false);
+}
