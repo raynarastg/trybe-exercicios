@@ -43,3 +43,20 @@ if (lado1 + lado2 + lado3 == 180 && lado1 > 0 && lado2 > 0 && lado3 > 0) {
 } else {
   console.log(false);
 }
+
+let peca = "Rainha";
+peca = peca.toLowerCase();
+
+switch (peca) {
+  case "rainha":
+    console.log("fileiras, colunas, diagonal");
+    break;
+  case "bispo":
+    console.log("diagonal");
+    break;
+  case "cavalo":
+    console.log("L");
+    break;
+  default:
+    console.log("erro");
+}
