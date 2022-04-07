@@ -40,3 +40,13 @@ if (contagemImpares > 0) {
 } else {
   console.log("nenhum valor ímpar encontrado");
 }
+// ex 7
+let menorValor = numbers[0];
+
+for (let index = 0; index < numbers.length; index++) {
+  if (numbers[index] < menorValor) {
+    menorValor = numbers[index];
+  }
+}
+
+console.log(menorValor);
