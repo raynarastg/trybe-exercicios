@@ -76,3 +76,23 @@ if (nota >= 90 && nota <= 100) {
 } else {
   console.log("ERRO");
 }
+
+const number1 = 5;
+const number2 = 7;
+const number3 = 2;
+
+if (number1 % 2 == 0 || number2 % 2 == 0 || number3 % 2 == 0) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+
+const number4 = 6;
+const number5 = 7;
+const number6 = 2;
+
+if (number4 % 2 == 1 || number5 % 2 == 1 || number6 % 2 == 1) {
+  console.log(true);
+} else {
+  console.log(false);
+}
