@@ -26,3 +26,17 @@ for (let index = 0; index < numbers.length; index++) {
   }
 }
 console.log(maior);
+// ex 6
+let contagemImpares = 0;
+
+for (let index = 0; index < numbers.length; index++) {
+  if (numbers[index] % 2 == 1) {
+    contagemImpares++;
+  }
+}
+
+if (contagemImpares > 0) {
+  console.log(contagemImpares);
+} else {
+  console.log("nenhum valor ímpar encontrado");
+}
