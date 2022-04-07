@@ -50,3 +50,9 @@ for (let index = 0; index < numbers.length; index++) {
 }
 
 console.log(menorValor);
+// ex 8
+let numeros = [];
+for (let index = 1; index <= 25; index++) {
+  numeros.push(index);
+}
+console.log(numeros);
