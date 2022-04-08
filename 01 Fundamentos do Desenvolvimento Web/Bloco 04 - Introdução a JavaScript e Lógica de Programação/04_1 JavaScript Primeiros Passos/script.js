@@ -109,3 +109,34 @@ if (valorCusto < 0 || valorVenda < 0) {
   var lucroTotal = lucro * 1000;
   console.log(lucroTotal);
 }
+//exercicio 11
+const salarioBruto = 3000;
+
+let descontoInss;
+let descontoIr;
+
+if (salarioBruto <= 1556.94) {
+  descontoInss = (8 / 100) * salarioBruto;
+} else if (salarioBruto >= 1556.95 && salarioBruto <= 2594.92) {
+  descontoInss = (9 / 100) * salarioBruto;
+} else if (salarioBruto >= 2594.93 && salarioBruto <= 5189.82) {
+  descontoInss = (11 / 100) * salarioBruto;
+} else {
+  descontoInss = 570.88;
+}
+
+const salarioBase = salarioBruto - descontoInss;
+
+if (salarioBase <= 1903.98) {
+  descontoIr = 0;
+} else if (salarioBase >= 1903.99 && salarioBase <= 2826.65) {
+  descontoIr = (7.5 / 100) * salarioBase - 142.8;
+} else if (salarioBase >= 2826.66 && salarioBase <= 3751.05) {
+  descontoIr = (15 / 100) * salarioBase - 354.8;
+} else if (salarioBase >= 3751.06 && salarioBase <= 4664.68) {
+  descontoIr = (22.5 / 100) * salarioBase - 636.13;
+} else {
+  descontoIr = (27.5 / 100) * salarioBase - 869.36;
+}
+const salarioLiquido = salarioBase - descontoIr;
+console.log(salarioLiquido);
