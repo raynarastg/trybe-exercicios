@@ -96,3 +96,16 @@ if (number4 % 2 == 1 || number5 % 2 == 1 || number6 % 2 == 1) {
 } else {
   console.log(false);
 }
+//exercicio 10
+const valorCusto = 100;
+const valorVenda = 140;
+
+var valorCustoTotal = valorCusto + (20 / 100) * valorCusto;
+
+if (valorCusto < 0 || valorVenda < 0) {
+  console.log("erro");
+} else {
+  var lucro = valorVenda - valorCustoTotal;
+  var lucroTotal = lucro * 1000;
+  console.log(lucroTotal);
+}
