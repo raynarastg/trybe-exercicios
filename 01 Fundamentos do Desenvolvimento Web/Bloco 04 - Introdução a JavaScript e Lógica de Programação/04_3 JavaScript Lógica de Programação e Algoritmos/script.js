@@ -29,3 +29,17 @@ for (let index = 0; index < array.length; index++) {
   }
 }
 console.log(menorPalavra);
+// exercicio 4
+let maiorNumeroPrimo = 0;
+for (let numeroAtual = 0; numeroAtual <= 50; numeroAtual++) {
+  let numeroPrimo = true;
+  for (let numeroDivisor = 2; numeroDivisor < numeroAtual; numeroDivisor++) {
+    if (numeroAtual % numeroDivisor === 0) {
+      numeroPrimo = false;
+    }
+  }
+  if (numeroPrimo) {
+    maiorNumeroPrimo = numeroAtual;
+  }
+}
+console.log(maiorNumeroPrimo);
