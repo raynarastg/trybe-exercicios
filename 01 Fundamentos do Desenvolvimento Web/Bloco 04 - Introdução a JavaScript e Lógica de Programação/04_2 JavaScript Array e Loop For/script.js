@@ -10,7 +10,7 @@ for (let index = 0; index < numbers.length; index++) {
 }
 console.log(soma);
 // ex 3
-var media = soma / 10;
+var media = soma / numbers.length;
 console.log(media);
 // ex 4
 if (media > 20) {
