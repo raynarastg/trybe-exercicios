@@ -77,27 +77,6 @@
         )[0].style.backgroundColor = "rgb(255,255,255)";
       }
       mudaCorVermelha();
-
-      function mudaH1() {
-        document.getElementsByTagName("h1")[0].innerText =
-          "Exercício 5.1 - JavaScript ";
-      }
-      mudaH1();
-
-      function mudaParagrafos() {
-        let paragrafos = document.getElementsByTagName("p");
-        for (let p of paragrafos) {
-          p.style.textTransform = "uppercase";
-        }
-      }
-      mudaParagrafos();
-
-      function imprimeConsole() {
-        for (let p of document.getElementsByTagName("p")) {
-          console.log(p.innerHTML);
-        }
-      }
-      imprimeConsole();
     </script>
   </body>
 </html>
