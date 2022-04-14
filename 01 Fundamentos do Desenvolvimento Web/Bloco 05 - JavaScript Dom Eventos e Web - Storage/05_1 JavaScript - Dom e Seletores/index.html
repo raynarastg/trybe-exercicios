@@ -63,23 +63,41 @@
       }
       mudaTextoTagP();
 
-      // document.getElementsByClassName("main-content")[0].style.backgroundColor =
-      //   "rgb(76,164,109)";
+      function mudaCorAmarela() {
+        document.getElementsByClassName(
+          "main-content"
+        )[0].style.backgroundColor = "rgb(76,164,109)";
+      }
 
-      // document.getElementsByClassName(
-      //   "center-content"
-      // )[0].style.backgroundColor = "rgb(255,255,255)";
+      mudaCorAmarela();
 
-      // document.getElementsByTagName("h1")[0].innerText =
-      //   "Exercício 5.1 - JavaScript ";
+      function mudaCorVermelha() {
+        document.getElementsByClassName(
+          "center-content"
+        )[0].style.backgroundColor = "rgb(255,255,255)";
+      }
+      mudaCorVermelha();
 
-      // for (let p of document.getElementsByTagName("p")) {
-      //   p.style.textTransform = "uppercase";
-      // }
+      function mudaH1() {
+        document.getElementsByTagName("h1")[0].innerText =
+          "Exercício 5.1 - JavaScript ";
+      }
+      mudaH1();
 
-      // for (let p of document.getElementsByTagName("p")) {
-      //   console.log(p.innerHTML);
-      // }
+      function mudaParagrafos() {
+        let paragrafos = document.getElementsByTagName("p");
+        for (let p of paragrafos) {
+          p.style.textTransform = "uppercase";
+        }
+      }
+      mudaParagrafos();
+
+      function imprimeConsole() {
+        for (let p of document.getElementsByTagName("p")) {
+          console.log(p.innerHTML);
+        }
+      }
+      imprimeConsole();
     </script>
   </body>
 </html>
