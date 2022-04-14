@@ -83,6 +83,14 @@
           "Exercício 5.1 - JavaScript ";
       }
       mudaH1();
+
+      function mudaParagrafos() {
+        let paragrafos = document.getElementsByTagName("p");
+        for (let p of paragrafos) {
+          p.style.textTransform = "uppercase";
+        }
+      }
+      mudaParagrafos();
     </script>
   </body>
 </html>
