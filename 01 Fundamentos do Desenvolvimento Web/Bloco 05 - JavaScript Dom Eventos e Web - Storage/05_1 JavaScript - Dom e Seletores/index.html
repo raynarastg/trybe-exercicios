@@ -91,6 +91,13 @@
         }
       }
       mudaParagrafos();
+
+      function imprimeConsole() {
+        for (let p of document.getElementsByTagName("p")) {
+          console.log(p.innerHTML);
+        }
+      }
+      imprimeConsole();
     </script>
   </body>
 </html>
