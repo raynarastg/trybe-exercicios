@@ -56,6 +56,7 @@
        Crie uma função que exiba o conteúdo de todas as tags <p> no console.
               */
 
+      //exercicio 1
       function mudaTextoTagP() {
         let paragrafo = document.getElementsByTagName("p")[0];
         paragrafo.innerHTML =
@@ -63,14 +64,15 @@
       }
       mudaTextoTagP();
 
+      //exercicio 2
       function mudaCorAmarela() {
         document.getElementsByClassName(
           "main-content"
         )[0].style.backgroundColor = "rgb(76,164,109)";
       }
-
       mudaCorAmarela();
 
+      //exercicio 3
       function mudaCorVermelha() {
         document.getElementsByClassName(
           "center-content"
@@ -78,12 +80,14 @@
       }
       mudaCorVermelha();
 
+      //exercicio 4
       function mudaH1() {
         document.getElementsByTagName("h1")[0].innerText =
           "Exercício 5.1 - JavaScript ";
       }
       mudaH1();
 
+      // exercicio 5
       function mudaParagrafos() {
         let paragrafos = document.getElementsByTagName("p");
         for (let p of paragrafos) {
@@ -92,6 +96,7 @@
       }
       mudaParagrafos();
 
+      //exercicio 6
       function imprimeConsole() {
         for (let p of document.getElementsByTagName("p")) {
           console.log(p.innerHTML);
