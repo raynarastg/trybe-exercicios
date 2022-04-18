@@ -88,6 +88,26 @@
       IMG.className = "small-image";
       IMG.src = "https://picsum.photos/200";
       section.appendChild(IMG);
+      // exercício 8
+      const UL = document.createElement("ul");
+      sectionRight.appendChild(UL);
+      const numeros = [
+        "um",
+        "dois",
+        "três",
+        "quatro",
+        "cinco",
+        "seis",
+        "sete",
+        "oito",
+        "nove",
+        "dez",
+      ];
+      for (let n in numeros) {
+        const LI = document.createElement("li");
+        LI.innerHTML = numeros[n];
+        UL.appendChild(LI);
+      }
     </script>
   </body>
 </html>
