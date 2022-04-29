@@ -1,0 +1,24 @@
+body {
+  background-color: #83b3e3;
+}
+header {
+  background-color: #97cbff;
+  border-radius: 10px;
+  color: #056bd7;
+}
+#botaoEnviar {
+  border-radius: 5px;
+  background-color: #9bb6d1;
+  color: #002d5a;
+}
+#botaoLimpar {
+  border-radius: 5px;
+  background-color: #9bb6d1;
+  color: #002d5a;
+}
+#text-motivo {
+  border-radius: 5px;
+}
+#data-viagem {
+  border-radius: 5px;
+}
