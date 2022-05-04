@@ -45,3 +45,16 @@ figure {
 figcaption {
   font-size: 0.8em;
 }
+@media (min-width: 900px) {
+  body {
+    background-color: rgb(153, 255, 255);
+  }
+  figure {
+    max-width: 350px;
+  }
+  section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
