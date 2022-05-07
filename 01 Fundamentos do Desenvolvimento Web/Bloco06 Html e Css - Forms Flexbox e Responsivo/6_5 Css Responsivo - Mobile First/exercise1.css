@@ -17,11 +17,11 @@ body {
 }
 
 article {
-  font-size: x-large;
+  font-size: large;
 }
 
 h1 {
-  font-size: X-large;
+  font-size: x-large;
 }
 
 h2 {
@@ -48,6 +48,10 @@ figcaption {
 @media (min-width: 900px) {
   body {
     background-color: rgb(153, 255, 255);
+    margin: 25px;
+  }
+  article {
+    font-size: x-large;
   }
   figure {
     max-width: 350px;
@@ -56,5 +60,14 @@ figcaption {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+}
+@media (min-width: 1080px) {
+  body {
+    background-color: rgb(132, 255, 214);
+    margin: 35px;
+  }
+  h1 {
+    font-size: xx-large;
   }
 }
