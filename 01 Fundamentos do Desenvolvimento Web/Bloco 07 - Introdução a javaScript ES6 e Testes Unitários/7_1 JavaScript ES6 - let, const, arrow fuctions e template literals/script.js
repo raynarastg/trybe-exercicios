@@ -21,3 +21,4 @@ const ordenados = oddsAndEvens.sort(function (a, b) {
 console.log(
   `Os números ${ordenados} se encontram ordenados de forma crescente!`
 );
+//
