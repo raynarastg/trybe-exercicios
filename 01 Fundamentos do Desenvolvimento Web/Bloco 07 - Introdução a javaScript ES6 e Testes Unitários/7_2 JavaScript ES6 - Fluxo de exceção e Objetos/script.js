@@ -7,9 +7,9 @@
 //   document.getElementById("value2").value = "";
 //
 const verificaValue = (value1, value2) => {
-  if (value1 === " " || value2 === " ") {
+  if ((value1 === " " || value2 === " ") || (isNaN(value1) || isNaN(value2))) {
     throw new Error(
-      "São necessários dois números para que a operação seja feita!"
+      "São necessários dois valores para que a operação seja feita! Os valores devem ser númericos"
     );
   }
 };
