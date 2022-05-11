@@ -21,4 +21,28 @@ const ordenados = oddsAndEvens.sort(function (a, b) {
 console.log(
   `Os números ${ordenados} se encontram ordenados de forma crescente!`
 );
+//retorna fatorial
+function fatorial(n) {
+  let numero = 1;
+  for (let i = n; i > 1; i -= 1){
+    numero = numero * i;
+  }
+  return numero;
+}
+console.log(fatorial(5))
+//retorna fatorial ternary
+const fatorialTernary = number => number > 1 ? number * fatorialTernary(number-1): 1
+
+console.log(fatorialTernary(5))
+//retorna fatorial recursivo
+function fatorialRecursivo(number){
+  if(number>1){
+    return number * fatorialRecursivo(number-1)
+  }
+  else{
+    return number
+  }
+}
+
+console.log(fatorialRecursivo(1));
 //
