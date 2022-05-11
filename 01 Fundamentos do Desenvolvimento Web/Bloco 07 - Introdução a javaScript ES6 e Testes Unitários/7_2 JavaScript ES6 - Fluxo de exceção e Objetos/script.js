@@ -83,11 +83,20 @@ const customerInfo = (order) => {
 
 console.log(customerInfo(order));
 
-// const orderModifier = (order) => {
-//   // Adicione abaixo as informações necessárias.
 
-// }
+  //   // Adicione abaixo as informações necessárias.
 
-// orderModifier(order);
+  let marguerita = Object.keys(order.order.pizza)[0]
+  let pepperoni = Object.keys(order.order.pizza)[1]
+  order.order.delivery.deliveryPerson = 'Luiz Silva'
+  const orderModifier = (order) => {
+
+    let pessoa = order.order.delivery.deliveryPerson
+    return `Olá ${pessoa}, seu pedido é ${marguerita} e ${pepperoni}`
+  }
+
+console.log(orderModifier(order))
+
+
 
 
