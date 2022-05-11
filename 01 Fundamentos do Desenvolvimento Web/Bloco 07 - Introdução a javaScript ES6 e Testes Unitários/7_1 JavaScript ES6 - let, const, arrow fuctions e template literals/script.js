@@ -45,4 +45,16 @@ function fatorialRecursivo(number){
 }
 
 console.log(fatorialRecursivo(1));
-//
+//Crie uma função que receba uma frase e retorne qual a maior palavra.
+
+function longestWord(string){
+  let arrayString = string.split(' ');
+  let maior = arrayString[0];
+  for (i of arrayString){
+    if(i.length > maior.length){
+      maior = i
+    } 
+    }
+  return maior
+}
+console.log(longestWord('Antônio foi no banheiro e não sabemos o que aconteceu'))
