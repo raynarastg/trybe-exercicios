@@ -16,7 +16,7 @@ const nomePessoa = (nome) => {
 }
 console.log(newEmployees(nomePessoa));
 
-////
+////exercicio 2
 
 const confereAposta = (numeroApostado, funcaoSortear) => {
   return funcaoSortear(numeroApostado) ? 'Parabéns, você ganho' : 'Tente novamente'
@@ -29,3 +29,5 @@ const gerarNumeroAleatorio = (callback) => {
 return false
 }
 console.log(confereAposta(3, gerarNumeroAleatorio))
+///
+
