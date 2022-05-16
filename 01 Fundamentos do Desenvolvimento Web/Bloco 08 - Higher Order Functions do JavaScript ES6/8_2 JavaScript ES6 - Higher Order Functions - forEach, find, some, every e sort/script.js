@@ -69,3 +69,60 @@ function authorBornIn1947() {
 }
 console.log(authorBornIn1947())
 //
+//2 - Retorne o nome do livro de menor nome.
+function smallerName() {
+  let nameBook = books[0].name;
+  // escreva aqui o seu código
+   books.forEach((element) => {
+    if (element.name.length < nameBook.length) {
+      nameBook = element.name
+    }
+  })
+
+  // Variável nameBook que receberá o valor do menor nome;
+  return nameBook;
+}
+console.log(smallerName())
+///
+//3 - Encontre o primeiro livro cujo nome possui 26 caracteres.
+function getNamedBook(numeroLetras) {
+  // escreva seu código aqui
+  return books.find((element) => element.name.length === numeroLetras).name
+}
+console.log(getNamedBook(26))
+///
+//4 - Ordene os livros por data de lançamento em ordem decrescente.
+function booksOrderedByReleaseYearDesc() {
+  // escreva aqui seu código
+  return books.sort((a, b) => b.releaseYear - a.releaseYear)
+}
+console.log(booksOrderedByReleaseYearDesc())
+///
+// 5 - Faça uma função que retorne true, se todas as pessoas autoras nasceram no século XX, ou false, caso contrário.
+// const expectedResult = false;
+
+function everyoneWasBornOnSecXX() {
+  // escreva seu código aqui
+  return books.every((element) => element.author.birthYear >= 1900 && element.author.birthYear <= 1999)
+}
+console.log(everyoneWasBornOnSecXX())
+///
+//6 - Faça uma função que retorne true, se algum livro foi lançado na década de 80, e false, caso contrário.
+// const expectedResult = true;
+
+function someBookWasReleaseOnThe80s() {
+  // escreva seu código aqui
+  return books.some((element) => element.releaseYear >= 1980 && element.releaseYear <= 1989)
+}
+console.log(someBookWasReleaseOnThe80s())
+////
+//7 - Faça uma função que retorne true, caso nenhum author tenha nascido no mesmo ano, e false, caso contrário.
+// const expectedResult = false;
+
+function authorUnique() {
+  // escreva seu código aqui
+  return books.every((element, index, elementComparacao) => (element.author.birthYear === elementComparacao[index +1]))
+  
+}
+console.log(authorUnique())
+//
