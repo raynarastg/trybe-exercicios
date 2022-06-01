@@ -55,7 +55,7 @@ function diasMes() {
 
 diasMes();
 
-//exercício 2
+///exercício 2
 function criaBotao(botaoFeriado) {
   let botao = document.createElement("button");
   let botaoID = "btn-holiday";
