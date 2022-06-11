@@ -3,7 +3,7 @@ import './App.css';
 
 const Task = (value) => {
   return (
-    <li>{value}</li>
+    <li key={value}>{value}</li>
   );
 }
 
@@ -12,7 +12,7 @@ const tarefas = ['limpar', 'varrer', 'lavar'];
 class App extends React.Component {
   render() {
     return (
-    tarefas.map((tarefa) => Task(tarefa ))
+     <ol>{ tarefas.map((tarefa) => Task(tarefa)) }</ol>
   )
 }
 }
