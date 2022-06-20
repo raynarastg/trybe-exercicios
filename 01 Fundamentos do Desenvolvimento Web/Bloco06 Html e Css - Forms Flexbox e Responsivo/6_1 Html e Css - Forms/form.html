@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <header><h1>TrybeTrip - Formulário</h1></header>
+  <body>
+    <div id="estrutura">
+      <form action="" method="get">
+        <br />
+        <div id="campo-nome">
+          <label for="nome-user"
+            >Nome Completo :
+            <input
+              type="text"
+              id="nome-user"
+              name="user"
+              value=""
+              placeholder="digite seu nome"
+              minlength="10"
+              maxlength="40"
+          /></label>
+        </div>
+        <br />
+        <div id="campo-email">
+          <label for="email-user"
+            >E-mail :
+            <input
+              type="email"
+              id="email-user"
+              name="user"
+              value=""
+              placeholder="digite seu e-mail"
+              minlength="10"
+              maxlength="50"
+          /></label>
+        </div>
+        <br />
+        <br />
+        <div id="campo-destino">
+          <label for="cidade">
+            Destino Preferido
+            <input
+              type="radio"
+              id="cidade"
+              name="lugar"
+              value="cdd"
+              placeholder=""
+            />Cidade
+          </label>
+          <label for="campo">
+            <input
+              type="radio"
+              id="campo"
+              name="lugar"
+              value="camp"
+              placeholder=""
+            />Campo
+          </label>
+          <label for="praia">
+            <input
+              type="radio"
+              id="praia"
+              name="lugar"
+              value="prainha"
+              placeholder=""
+            />Praia
+          </label>
+          <label for="montanhas">
+            <input
+              type="radio"
+              id="montanhas"
+              name="lugar"
+              value="monts"
+              placeholder=""
+            />Montanhas
+          </label>
+          <br />
+          <br />
+          <p>
+            Por que você deveria ser a pessoa desenvolvedora a ganhar o curso
+            TrybeTrip?
+          </p>
+          <textarea
+            name=""
+            id="text-motivo"
+            cols="30"
+            rows="5"
+            maxlength="500"
+          ></textarea>
+        </div>
+        <br />
+        <div id="campo-data">
+          <label
+            >Qual a melhor data para realizar sua viagem?
+            <br />
+            <br />
+            <input type="date" id="data-viagem" value="" name="" />
+          </label>
+        </div>
+
+        <br />
+        <div id="campo-checkbox">
+          <label>
+            <input type="checkbox" id="checkbox-noticia" />
+            Gostaria de receber outras incríveis oportunidades oferecidas pela
+            Trybe?
+          </label>
+          <br />
+
+          <label>
+            <input type="checkbox" id="checkbox-concordo" />
+            Concordo que imagens das minhas férias poderão ser usadas na
+            divulgação de concursos futuros.
+          </label>
+        </div>
+        <br />
+      </form>
+    </div>
+    <div id="buttons">
+      <button type="submit" id="botaoEnviar">Enviar</button>
+      <button type="reset" id="botaoLimpar">Limpar</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

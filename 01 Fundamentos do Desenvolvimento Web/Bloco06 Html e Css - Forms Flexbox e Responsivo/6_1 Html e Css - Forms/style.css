@@ -1,0 +1,12 @@
+header {
+  background-color: rgb(223, 223, 223);
+  border-radius: 5px;
+}
+#estrutura {
+  border: 1px solid grey;
+}
+#nome-user {
+}
+#buttons {
+  margin-top: 10px;
+}
